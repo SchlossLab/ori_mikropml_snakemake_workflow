@@ -105,3 +105,8 @@ rule archive:
         """
         zip -r {output} {input} 2> {log}
         """
+onsuccess:
+    print("🎉 workfow finished 🎉")
+
+onerror:
+    print("💥 Please consult logfiles for more info 💥")

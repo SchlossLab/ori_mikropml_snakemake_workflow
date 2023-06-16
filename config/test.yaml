@@ -1,6 +1,6 @@
-dataset_csv: data/processed/otu-micro.csv
-dataset_name: otu-micro
-outcome_colname: dx
+dataset_csv: data/processed/preprocessed_words_mini.csv
+dataset_name: words-mini
+outcome_colname: new_seq_data
 ml_methods:
  - glmnet
 kfold: 2
