@@ -1,0 +1,11 @@
+s,h:m:s,max_rss,max_vms,max_uss,max_pss,io_in,io_out,mean_load,cpu_time,dataset,method,seed
+48.8002,00:00:48,0,0,0,0,0,0,334.32,0,400_papers_glmnet,glmnet,100
+49.2338,00:00:49,0,0,0,0,0,0,330.24,0,400_papers_glmnet,glmnet,101
+50.696,00:00:50,0,0,0,0,0,0,321.47,0,400_papers_glmnet,glmnet,102
+47.1629,00:00:47,0,0,0,0,0,0,91.24,0,400_papers_glmnet,glmnet,103
+49.0993,00:00:49,0,0,0,0,0,0,331.85,0,400_papers_glmnet,glmnet,104
+48.2199,00:00:48,0,0,0,0,0,0,337.76,0,400_papers_glmnet,glmnet,105
+49.3824,00:00:49,0,0,0,0,0,0,330.03,0,400_papers_glmnet,glmnet,106
+48.7248,00:00:48,0,0,0,0,0,0,334.56,0,400_papers_glmnet,glmnet,107
+48.7282,00:00:48,0,0,0,0,0,0,334.74,0,400_papers_glmnet,glmnet,108
+48.3848,00:00:48,0,0,0,0,0,0,336.51,0,400_papers_glmnet,glmnet,109

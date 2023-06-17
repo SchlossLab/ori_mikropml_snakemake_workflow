@@ -1,9 +1,9 @@
-dataset_csv: data/processed/otu-large.csv
-dataset_name: otu-large
-outcome_colname: dx
+dataset_csv: data/processed/preprocessed_words_400_papers.csv
+dataset_name: 400_papers_glmnet
+outcome_colname: new_seq_data
 ml_methods:
  - glmnet
 kfold: 5
 ncores: 4
-nseeds: 50
-find_feature_importance: false
+nseeds: 10
+find_feature_importance: true
