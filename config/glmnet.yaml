@@ -1,6 +1,6 @@
-dataset_csv: data/processed/preprocessed_words_400_papers.csv
-dataset_name: 400_papers_glmnet
-outcome_colname: new_seq_data
+dataset_csv: data/processed/data_avail_words_193_sequencing_papers.csv
+dataset_name: data_avail_glmnet
+outcome_colname: data_avail
 ml_methods:
  - glmnet
 kfold: 5
