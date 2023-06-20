@@ -1,5 +1,5 @@
 dataset_csv: data/processed/data_avail_words_193_sequencing_papers.csv
-dataset_name: data_avail_glmnet
+dataset_name: data_gl_lambda
 outcome_colname: data_avail
 ml_methods:
  - glmnet
@@ -7,3 +7,13 @@ kfold: 5
 ncores: 4
 nseeds: 10
 find_feature_importance: true
+hyperparams:
+  - glmnet:
+    - alpha: 
+      - 0
+    - lambda:
+      - 1
+      - 5
+      - 10
+      - 15
+      - 20
