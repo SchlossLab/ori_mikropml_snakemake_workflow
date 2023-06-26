@@ -12,8 +12,9 @@ hyperparams:
     - alpha: 
       - 0
     - lambda:
-      - 1
-      - 5
       - 10
+      - 12.5
       - 15
       - 20
+      - 25
+      - 30
