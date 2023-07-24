@@ -1,20 +1,18 @@
 dataset_csv: data/processed/preprocessed_words_400_papers.csv
-dataset_name: seq_gl_lambda
+dataset_name: seq_gl_100s
 outcome_colname: new_seq_data
 ml_methods:
  - glmnet
 kfold: 5
-ncores: 4
-nseeds: 10
+ncores: 6
+nseeds: 100
 find_feature_importance: true
 hyperparams:
   - glmnet:
     - alpha: 
-      - 0
+      - 1
     - lambda:
+      - 5
       - 10
-      - 12.5
       - 15
-      - 20
-      - 25
-      - 30
+

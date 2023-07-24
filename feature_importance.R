@@ -3,22 +3,6 @@ library(ggtext)
 library(purrr)
 library(readr)
 
-feature_importance_results <- read_csv("results/400_papers_glmnet/feature-importance_results.csv")
-
-feature_importance_results %>%
-    group_by(feat) %>%
-    summarize(median = median(perf_metric_diff),
-              l_quartile = quantile(perf_metric_diff, prob=0.25),
-              u_quartile = quantile(perf_metric_diff, prob=0.75)) %>%
-    mutate(feat = fct_reorder(feat, median)) %>%
-    filter(abs(median) > 0.0005) %>%
-    ggplot(aes(x=median, y=feat, xmin=l_quartile, xmax=u_quartile)) +
-    geom_vline(xintercept=0, color="gray") +
-    geom_point() +
-    geom_linerange() +
-    labs(x="Change in AUC When Removed", y=NULL) +
-    theme_classic() #+
-    theme(axis.text.y = element_markdown())
 
 
     list.files(path="results/400_papers_glmnet/runs",
