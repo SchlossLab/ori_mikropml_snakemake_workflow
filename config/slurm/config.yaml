@@ -13,12 +13,12 @@ cluster:
         --time={resources.time}
         --output=log/hpc/jobs/{rule}/{rule}.{wildcards}.out
 default-resources:
-  - account=YOUR_ACCOUNT_HERE
+  - account=pschloss1
   - partition=standard
-  - email=YOUR_EMAIL_HERE
-  - mail_on=FAIL
+  - email=acollens@umich.edu
+  - mail_on=BEGIN,END,FAIL
   - mem_mb=512
-  - time="24:00:00"
+  - time="2:00:00"
 conda-frontend: "mamba"
 immediate-submit: False
 jobs: 4999

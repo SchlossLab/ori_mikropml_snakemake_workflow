@@ -1,5 +1,5 @@
 dataset_csv: data/processed/preprocessed_words_mini.csv
-dataset_name: words-mini
+dataset_name: words-mini_SLURM
 outcome_colname: new_seq_data
 ml_methods:
  - glmnet
