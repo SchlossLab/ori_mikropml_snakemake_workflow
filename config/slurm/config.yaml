@@ -13,7 +13,7 @@ cluster:
         --time={resources.time}
         --output=log/hpc/jobs/{rule}/{rule}.{wildcards}.out
 default-resources:
-  - account=pschloss1
+  - account=pschloss0
   - partition=standard
   - email=acollens@umich.edu
   - mail_on=BEGIN,END,FAIL
