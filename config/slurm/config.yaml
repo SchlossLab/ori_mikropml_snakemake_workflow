@@ -16,7 +16,7 @@ default-resources:
   - account=pschloss0
   - partition=standard
   - email=acollens@umich.edu
-  - mail_on=BEGIN,END,FAIL
+  - mail_on=FAIL
   - mem_mb=512
   - time="2:00:00"
 conda-frontend: "mamba"
