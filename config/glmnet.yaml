@@ -1,5 +1,5 @@
 dataset_csv: data/processed/preprocessed_words_400_papers.csv
-dataset_name: seq_gl_100s
+dataset_name: seq_gl_SLURM
 outcome_colname: new_seq_data
 ml_methods:
  - glmnet
@@ -12,6 +12,7 @@ hyperparams:
     - alpha: 
       - 1
     - lambda:
+      - 1
       - 5
       - 10
       - 15
