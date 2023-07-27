@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=mikropml_0725
+#SBATCH --job-name=mikropml_0727
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=1G
+#SBATCH --mem-per-cpu=500MB
 #SBATCH --time=2:00:00
 #SBATCH --output=log/hpc/slurm-%j_%x.out 
 #SBATCH --account=pschloss0
