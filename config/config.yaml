@@ -1,5 +1,5 @@
 dataset_csv: data/processed/preprocessed_words_400_papers.csv
-dataset_name: words-400-manuscripts
+dataset_name: seq_SLURM_gl_rf
 outcome_colname: new_seq_data
 ml_methods:
  - glmnet
