@@ -2,8 +2,8 @@ dataset_csv: data/processed/preprocessed_words_400_papers.csv
 dataset_name: seq_SLURM_gl_rf
 outcome_colname: new_seq_data
 ml_methods:
- - glmnet
  - rf
+ - glmnet
 kfold: 5
 ncores: 8
 nseeds: 10
@@ -19,6 +19,6 @@ hyperparams:
       - 15
   - rf:
     - mtry: 
-      - 60
-      - 80
-      - 100
+      - 150
+      - 200
+      - 300

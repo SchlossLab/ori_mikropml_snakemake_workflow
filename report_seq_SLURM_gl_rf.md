@@ -14,7 +14,7 @@ output:
 
 
 
-Machine learning algorithm(s) used: glmnet and rf.
+Machine learning algorithm(s) used: rf and glmnet.
 Models were trained with 10 different random
 partitions of the seq_SLURM_gl_rf dataset into training and
 testing sets using 5-fold cross validation.
@@ -33,7 +33,7 @@ for the full configuration.
 
 ## Hyperparameter Performance
 
-<img src="figures/seq_SLURM_gl_rf/hp_performance_glmnet.png" width="80%" /><img src="figures/seq_SLURM_gl_rf/hp_performance_rf.png" width="80%" />
+<img src="figures/seq_SLURM_gl_rf/hp_performance_rf.png" width="80%" /><img src="figures/seq_SLURM_gl_rf/hp_performance_glmnet.png" width="80%" />
 
 ## Feature Importance
 
