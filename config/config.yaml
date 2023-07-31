@@ -9,3 +9,11 @@ ncores: 8
 nseeds: 10
 find_feature_importance: true
 hyperparams:
+  - glmnet:
+    - alpha: 
+      - 0
+    - lambda:
+      - 1
+      - 5
+      - 10
+      - 15

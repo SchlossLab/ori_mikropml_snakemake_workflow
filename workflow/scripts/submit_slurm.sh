@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=mikropml_0727
+#SBATCH --job-name=mikropml_0730
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
@@ -19,4 +19,4 @@
 module load singularity 
 
 # Run snakemake
-snakemake --profile config/slurm --latency-wait 90 --use-singularity --use-conda --conda-frontend mamba --configfile config/glmnet.yaml 
+snakemake --profile config/slurm --latency-wait 90 --use-singularity --use-conda --conda-frontend mamba --configfile config/config.yaml 
