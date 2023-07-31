@@ -4,7 +4,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=500MB
-#SBATCH --time=2:00:00
+#SBATCH --time=10:00:00
 #SBATCH --output=log/hpc/slurm-%j_%x.out 
 #SBATCH --account=pschloss0
 #SBATCH --partition=standard             
@@ -19,4 +19,4 @@
 module load singularity 
 
 # Run snakemake
-snakemake --profile config/slurm --latency-wait 90 --use-singularity --use-conda --conda-frontend mamba --configfile config/config.yaml 
+snakemake --profile config/slurm --latency-wait 90 --use-singularity --use-conda --conda-frontend mamba --configfile config/glmnet.yaml 

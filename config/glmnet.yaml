@@ -1,16 +1,16 @@
 dataset_csv: data/processed/preprocessed_words_400_papers.csv
-dataset_name: seq_gl_SLURM
+dataset_name: seq_gl_10s_SLURM
 outcome_colname: new_seq_data
 ml_methods:
  - glmnet
 kfold: 5
-ncores: 6
+ncores: 8
 nseeds: 10
 find_feature_importance: true
 hyperparams:
   - glmnet:
     - alpha: 
-      - 1
+      - 0
     - lambda:
       - 1
       - 5
